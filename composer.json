@@ -2,28 +2,20 @@
     "name": "patronbase/omnipay-redsys",
     "type": "library",
     "description": "Redsys driver for the Omnipay payment processing library",
-    "keywords": [
-        "gateway",
-        "merchant",
-        "omnipay",
-        "pay",
-        "payment",
-        "redsys",
-        "servired",
-        "sermepa",
-        "redirect",
-        "webservice",
-        "web service",
-        "soap"
-    ],
-    "homepage": "https://github.com/PatronBase/omnipay-redsys",
+    "homepage": "https://github.com/rsenses/omnipay-redsys",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Rubén Silva",
+            "email": "me@rsilva.es",
+            "homepage": "http://github.com/rsenses"
+        },
         {
             "name": "Leith Caldwell",
             "email": "leith@codedruids.com"
         }
     ],
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Omnipay\\Redsys\\": "src/"
@@ -35,19 +27,16 @@
         }
     },
     "require": {
+        "php": ">=7.2",
         "omnipay/common": "^3.2.0"
     },
     "require-dev": {
         "omnipay/tests": "^4.0.0",
         "squizlabs/php_codesniffer": "^3.5"
     },
-    "suggest": {
-        "ext-openssl": "Required for hashing functions to check message signatures"
-    },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.1.x-dev"
+            "dev-master": "3.1.0"
         }
-    },
-    "prefer-stable": true
+    }
 }
